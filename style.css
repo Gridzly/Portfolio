@@ -342,7 +342,109 @@ header{
 
 }
 
+/* =========================
+   EXPERIENCE COMPACT DESIGN
+========================= */
 
+
+.timeline{
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+
+}
+
+
+.timeline-item{
+
+    display:grid;
+    grid-template-columns:80px 1fr;
+    gap:20px;
+
+    padding:18px 15px;
+
+    border-radius:15px;
+
+    transition:.3s ease;
+
+    cursor:default;
+
+}
+
+
+/* Hover Effect */
+
+.timeline-item:hover{
+
+    background:var(--bg);
+
+    transform:translateX(8px);
+
+}
+
+
+/* Year */
+
+.year{
+
+    color:var(--accent);
+
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    padding-top:3px;
+
+}
+
+
+
+/* Content */
+
+.timeline-content{
+
+    padding:0;
+
+    border:none;
+
+}
+
+
+
+.timeline-content h3{
+
+    font-size:1.2rem;
+
+    margin-bottom:6px;
+
+    color:var(--text);
+
+}
+
+
+
+.timeline-content p{
+
+    color:var(--muted);
+
+    line-height:1.6;
+
+    font-size:.95rem;
+
+    max-width:850px;
+
+}
+
+
+
+/* Dark mode hover */
+
+body.dark .timeline-item:hover{
+
+    background:#172033;
+
+}
 
 /* SKILLS */
 
