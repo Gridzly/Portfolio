@@ -38,3 +38,38 @@ backToTop.addEventListener("click",()=>{
         behavior:"smooth"
     });
 });
+
+// Project video hover preview
+
+const projectCards = document.querySelectorAll(".project-card");
+
+
+projectCards.forEach(card => {
+
+
+    const video = card.querySelector("video");
+
+
+    if(video){
+
+
+        card.addEventListener("mouseenter",()=>{
+
+            video.play();
+
+        });
+
+
+        card.addEventListener("mouseleave",()=>{
+
+            video.pause();
+
+            video.currentTime = 0;
+
+        });
+
+
+    }
+
+
+});
