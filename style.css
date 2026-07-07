@@ -896,3 +896,62 @@ body.dark #backToTop{
     color:#111827;
 
 }
+
+/* =========================
+   PROJECT VIDEO PREVIEW
+========================= */
+
+
+.project-media{
+
+    position:relative;
+
+    height:160px;
+
+    overflow:hidden;
+
+}
+
+
+.project-media img,
+.project-media video{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+.project-media video{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    opacity:0;
+
+    transition:.3s ease;
+
+}
+
+
+
+/* Hover show video */
+
+.project-card:hover .project-media video{
+
+    opacity:1;
+
+}
+
+
+.project-card:hover .project-media img{
+
+    opacity:0;
+
+}
