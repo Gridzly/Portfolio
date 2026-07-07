@@ -1,53 +1,15 @@
-// Dark and Light Mode Toggle
-
-const themeButton = document.getElementById("theme-toggle");
-
-const body = document.body;
+console.log("Script loaded");
 
 
-// Load saved theme
-
-const savedTheme = localStorage.getItem("theme");
+const button = document.getElementById("theme-toggle");
 
 
-if(savedTheme === "dark"){
+button.addEventListener("click", function(){
 
-    body.classList.add("dark");
-
-    themeButton.innerHTML = '<i class="fas fa-sun"></i>';
-
-}
+    console.log("Button clicked");
 
 
-
-// Button function
-
-themeButton.addEventListener("click", function(){
-
-
-    body.classList.toggle("dark");
-
-
-    if(body.classList.contains("dark")){
-
-
-        localStorage.setItem("theme","dark");
-
-
-        themeButton.innerHTML =
-        '<i class="fas fa-sun"></i>';
-
-
-    }else{
-
-
-        localStorage.setItem("theme","light");
-
-
-        themeButton.innerHTML =
-        '<i class="fas fa-moon"></i>';
-
-    }
+    document.body.classList.toggle("dark");
 
 
 });

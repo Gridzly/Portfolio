@@ -773,142 +773,33 @@ header {
 }
 
 
-
-/* =========================
-   Dark Mode
-========================= */
-
-
 body.dark {
 
     background: #111827;
-
-    color: #f9fafb;
+    color: white;
 
 }
-
 
 
 body.dark .card {
 
     background: #1f2937;
-
     color: white;
 
 }
 
 
+body.dark h1,
+body.dark h2,
+body.dark h3 {
 
-body.dark .hero h1 {
-
-    color: white;
-
-}
-
-
-
-body.dark .hero h3 {
-
-    color: #cbd5e1;
+    color:white;
 
 }
 
 
+body.dark p {
 
-body.dark .intro {
-
-    color: #cbd5e1;
-
-}
-
-
-
-body.dark .card-content p {
-
-    color: #cbd5e1;
-
-}
-
-
-
-body.dark .info-card {
-
-    background: #111827;
-
-    border-color: #374151;
-
-}
-
-
-
-body.dark .info-card p {
-
-    color: #cbd5e1;
-
-}
-
-
-
-body.dark .timeline-content {
-
-    border-color: #374151;
-
-}
-
-
-
-body.dark .timeline-content p {
-
-    color: #cbd5e1;
-
-}
-
-
-
-body.dark .skill-list span {
-
-    background: #374151;
-
-    color: white;
-
-}
-
-
-
-body.dark .project-card {
-
-    background: #1f2937;
-
-    border-color: #374151;
-
-}
-
-
-
-body.dark .project-info p {
-
-    color: #cbd5e1;
-
-}
-
-
-
-body.dark .social-links a {
-
-    background: #1f2937;
-
-    border-color: #374151;
-
-    color: white;
-
-}
-
-
-
-body.dark .theme-btn {
-
-    background: #374151;
-
-    color: #facc15;
+    color:#d1d5db;
 
 }
