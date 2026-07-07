@@ -616,19 +616,29 @@ PROJECTS
 SOCIAL
 ================= */
 
-
 .social-links{
 
     display:flex;
 
     justify-content:center;
 
+    flex-wrap:wrap;
+
     gap:15px;
 
 }
 
-
 .social-links a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    min-width:160px;
 
     padding:15px 25px;
 
@@ -638,10 +648,19 @@ SOCIAL
 
     border:1px solid var(--border);
 
+    color:var(--text);
+
+    font-weight:500;
+
     transition:.3s ease;
 
 }
 
+.social-links a i{
+
+    font-size:1.1rem;
+
+}
 
 .social-links a:hover{
 
@@ -651,9 +670,11 @@ SOCIAL
 
     color:white;
 
+    border-color:var(--accent);
+
+    box-shadow:0 10px 25px rgba(124,58,237,.25);
+
 }
-
-
 
 /* =================
 FOOTER
