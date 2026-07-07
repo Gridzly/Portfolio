@@ -728,3 +728,42 @@ footer {
     }
 
 }
+
+/* Theme button */
+
+.theme-btn {
+
+    position: fixed;
+
+    top: 25px;
+
+    right: 30px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    cursor: pointer;
+
+    background: var(--card);
+
+    color: var(--text);
+
+    font-size: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+
+    transition: .3s;
+
+}
+
+
+.theme-btn:hover {
+
+    transform: translateY(-3px);
+
+}
