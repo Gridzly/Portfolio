@@ -1,21 +1,51 @@
-// Dark and light mode switch
+// Theme switcher
 
 const themeButton = document.getElementById("theme-toggle");
 
-themeButton.addEventListener("click", () => {
-
-    document.body.classList.toggle("dark");
+const body = document.body;
 
 
-    // Change icon depending on selected mode
-    if(document.body.classList.contains("dark")){
+// Check previous saved theme
 
-        themeButton.innerHTML = "☀️";
+if(localStorage.getItem("theme") === "dark"){
 
-    } else {
+    body.classList.add("dark");
 
-        themeButton.innerHTML = "🌙";
+    themeButton.innerHTML =
+    '<i class="fas fa-sun"></i>';
+
+}
+
+
+
+// Button click
+
+themeButton.addEventListener("click",()=>{
+
+
+    body.classList.toggle("dark");
+
+
+    if(body.classList.contains("dark")){
+
+
+        localStorage.setItem("theme","dark");
+
+
+        themeButton.innerHTML =
+        '<i class="fas fa-sun"></i>';
+
+
+    }else{
+
+
+        localStorage.setItem("theme","light");
+
+
+        themeButton.innerHTML =
+        '<i class="fas fa-moon"></i>';
 
     }
+
 
 });
