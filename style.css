@@ -552,3 +552,87 @@ footer{
 
 
 }
+
+/* =========================
+   DARK MODE FIX
+========================= */
+
+
+body.dark .card,
+body.dark .project-card,
+body.dark .info-card{
+
+    background:#1e293b;
+    border-color:#334155;
+
+}
+
+
+body.dark .card p,
+body.dark .project-info p,
+body.dark .info-card p,
+body.dark .timeline-content p{
+
+    color:#cbd5e1;
+
+}
+
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4{
+
+    color:#f8fafc;
+
+}
+
+
+/* project button */
+
+body.dark .project-links a{
+
+    color:white;
+
+}
+
+
+/* tags */
+
+body.dark .skill-list span,
+body.dark .project-tech span{
+
+    background:#312e81;
+    color:#ddd6fe;
+
+}
+
+
+/* social buttons */
+
+body.dark .social-links a{
+
+    background:#1e293b;
+    border-color:#334155;
+    color:#f8fafc;
+
+}
+
+
+/* profile border */
+
+body.dark .profile{
+
+    border-color:#1e293b;
+
+}
+
+
+/* theme button */
+
+body.dark .theme-btn{
+
+    background:#1e293b;
+    color:#facc15;
+
+}
