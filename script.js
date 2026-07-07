@@ -1,26 +1,28 @@
-// Theme switcher
+// Dark and Light Mode Toggle
 
 const themeButton = document.getElementById("theme-toggle");
 
 const body = document.body;
 
 
-// Check previous saved theme
+// Load saved theme
 
-if(localStorage.getItem("theme") === "dark"){
+const savedTheme = localStorage.getItem("theme");
+
+
+if(savedTheme === "dark"){
 
     body.classList.add("dark");
 
-    themeButton.innerHTML =
-    '<i class="fas fa-sun"></i>';
+    themeButton.innerHTML = '<i class="fas fa-sun"></i>';
 
 }
 
 
 
-// Button click
+// Button function
 
-themeButton.addEventListener("click",()=>{
+themeButton.addEventListener("click", function(){
 
 
     body.classList.toggle("dark");
