@@ -81,7 +81,11 @@ header{
 
     box-shadow:0 5px 20px rgba(0,0,0,.15);
 
-    z-index:10;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    z-index:100;
 
 }
 
@@ -286,9 +290,11 @@ header{
 
     border-radius:15px;
 
-    background:var(--bg);
+    background:var(--card);
 
     border:1px solid var(--border);
+
+    transition:.3s;
 
 }
 
@@ -297,9 +303,16 @@ header{
 
     margin-bottom:8px;
 
+    color:var(--text);
+
 }
 
 
+.info-card p{
+
+    color:var(--muted);
+
+}
 
 /* EXPERIENCE */
 
@@ -390,12 +403,9 @@ header{
 
 .project-card{
 
-    background:var(--bg);
-
+    background:var(--card);
     border:1px solid var(--border);
-
     border-radius:18px;
-
     overflow:hidden;
 
 }
@@ -434,13 +444,9 @@ header{
 .project-tech span{
 
     background:var(--tag);
-
     color:var(--accent);
-
     padding:6px 12px;
-
     border-radius:20px;
-
     font-size:.8rem;
 
 }
