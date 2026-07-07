@@ -799,3 +799,45 @@ RESPONSIVE
     box-shadow:0 8px 20px rgba(124,58,237,.25);
 
 }
+
+/* =========================
+   HERO BUTTON HOVER EFFECT
+========================= */
+
+.btn,
+.btn-outline{
+
+    transition:.3s ease;
+
+    cursor:pointer;
+
+}
+
+
+/* View Projects button */
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+    background:#6d28d9;
+
+    box-shadow:0 10px 25px rgba(124,58,237,.35);
+
+}
+
+
+
+/* Download Resume button */
+
+.btn-outline:hover{
+
+    transform:translateY(-5px);
+
+    background:var(--accent);
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(124,58,237,.35);
+
+}
