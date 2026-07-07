@@ -73,3 +73,28 @@ projectCards.forEach(card => {
 
 
 });
+
+const projects = document.querySelectorAll(".project-card");
+
+
+projects.forEach(project => {
+
+    const video = project.querySelector("video");
+
+
+    project.addEventListener("mouseenter",()=>{
+
+        video.play();
+
+    });
+
+
+    project.addEventListener("mouseleave",()=>{
+
+        video.pause();
+
+        video.currentTime = 0;
+
+    });
+
+});
