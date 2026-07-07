@@ -467,36 +467,6 @@ SKILLS
 }
 
 
-
-.skill-list span{
-
-    padding:8px 15px;
-
-    border-radius:30px;
-
-    background:var(--tag);
-
-    color:var(--accent);
-
-    font-size:.85rem;
-
-    transition:.3s ease;
-
-}
-
-
-.skill-list span:hover{
-
-    background:var(--accent);
-
-    color:white;
-
-    transform:translateY(-4px);
-
-}
-
-
-
 /* =================
 PROJECTS
 ================= */
@@ -575,23 +545,6 @@ PROJECTS
     margin-bottom:20px;
 }
 
-.project-tech span{
-    background:var(--tag);
-    color:var(--accent);
-    padding:6px 12px;
-    border-radius:20px;
-    transition:.3s;
-}
-
-.project-tech span:hover{
-    background:var(--accent);
-    color:white;
-    transform:translateY(-4px);
-    padding:5px 10px;
-    font-size:.8rem;
-    font-weight:500;
-
-}
 
 .project-links{
     margin-top:auto;
@@ -760,100 +713,6 @@ RESPONSIVE
 
 }
 
-/* =========================
-   SKILLS AND PROJECT TAG HOVER
-========================= */
-
-
-/* Skills tags */
-
-.skill-list span{
-
-    transition: .3s ease;
-
-    cursor:pointer;
-
-}
-
-
-.skill-list span:hover{
-
-    background:var(--accent);
-
-    color:white;
-
-    transform:translateY(-5px);
-
-    box-shadow:0 8px 20px rgba(124,58,237,.25);
-
-}
-
-
-
-/* Project technology tags */
-
-.project-tech span{
-
-    transition:.3s ease;
-
-    cursor:pointer;
-
-}
-
-
-.project-tech span:hover{
-
-    background:var(--accent);
-
-    color:white;
-
-    transform:translateY(-5px);
-
-    box-shadow:0 8px 20px rgba(124,58,237,.25);
-
-}
-
-/* =========================
-   HERO BUTTON HOVER EFFECT
-========================= */
-
-.btn,
-.btn-outline{
-
-    transition:.3s ease;
-
-    cursor:pointer;
-
-}
-
-
-/* View Projects button */
-
-.btn:hover{
-
-    transform:translateY(-5px);
-
-    background:#6d28d9;
-
-    box-shadow:0 10px 25px rgba(124,58,237,.35);
-
-}
-
-
-
-/* Download Resume button */
-
-.btn-outline:hover{
-
-    transform:translateY(-5px);
-
-    background:var(--accent);
-
-    color:white;
-
-    box-shadow:0 10px 25px rgba(124,58,237,.35);
-
-}
 
 /* =========================
    BACK TO TOP BUTTON
@@ -997,4 +856,55 @@ body.dark #backToTop{
 .prev:hover,
 .next:hover{
     background:var(--accent);
+}
+
+/* =========================
+   UNIFIED TAG STYLE
+========================= */
+
+/* Skills + Project Technology Tags */
+
+.skill-list span,
+.project-tech span{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:8px 15px;
+
+    background:var(--tag);
+
+    color:var(--accent);
+
+    border-radius:30px;
+
+    font-size:.85rem;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+/* Same Hover Effect Everywhere */
+
+.skill-list span:hover,
+.project-tech span:hover{
+
+    background:var(--accent);
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 20px rgba(124,58,237,.28);
+
 }
