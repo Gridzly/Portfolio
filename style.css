@@ -155,16 +155,6 @@ HERO
 
 }
 
-
-.greeting{
-
-    color:var(--accent);
-
-    font-weight:600;
-
-}
-
-
 .hero h1{
 
     font-size:3rem;
