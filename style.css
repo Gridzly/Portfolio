@@ -512,7 +512,7 @@ PROJECTS
     display:flex;
     flex-direction:column;
     height:100%;
-    min-height:700px;
+    min-height:auto;
     background:var(--card);
     border:1px solid var(--border);
     border-radius:16px;
