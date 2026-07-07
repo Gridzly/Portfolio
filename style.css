@@ -955,3 +955,45 @@ body.dark #backToTop{
     opacity:0;
 
 }
+
+.project-preview{
+
+    position:relative;
+
+    height:160px;
+
+    overflow:hidden;
+
+}
+
+
+.project-preview img,
+.project-preview video{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+.project-preview video{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    opacity:0;
+
+    transition:.3s ease;
+
+}
+
+
+.project-card:hover .project-preview video{
+
+    opacity:1;
+
+}
