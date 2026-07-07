@@ -746,3 +746,56 @@ RESPONSIVE
     }
 
 }
+
+/* =========================
+   SKILLS AND PROJECT TAG HOVER
+========================= */
+
+
+/* Skills tags */
+
+.skill-list span{
+
+    transition: .3s ease;
+
+    cursor:pointer;
+
+}
+
+
+.skill-list span:hover{
+
+    background:var(--accent);
+
+    color:white;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 20px rgba(124,58,237,.25);
+
+}
+
+
+
+/* Project technology tags */
+
+.project-tech span{
+
+    transition:.3s ease;
+
+    cursor:pointer;
+
+}
+
+
+.project-tech span:hover{
+
+    background:var(--accent);
+
+    color:white;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 20px rgba(124,58,237,.25);
+
+}
