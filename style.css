@@ -27,7 +27,6 @@ body.dark{
     --tag:#312e81;
 }
 
-
 body{
     font-family:"Inter",sans-serif;
     background:var(--bg);
@@ -35,18 +34,15 @@ body{
     transition:.3s ease;
 }
 
-
 img{
     width:100%;
     display:block;
 }
 
-
 a{
     text-decoration:none;
     color:inherit;
 }
-
 
 main{
     width:90%;
@@ -82,8 +78,8 @@ header{
     box-shadow:0 5px 20px rgba(0,0,0,.15);
 
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
 
     z-index:100;
 
@@ -126,14 +122,12 @@ header{
 }
 
 
-
 .greeting{
 
     color:var(--accent);
     font-weight:600;
 
 }
-
 
 
 .hero h1{
@@ -144,12 +138,10 @@ header{
 }
 
 
-
 .hero h3{
 
     font-size:1rem;
     color:var(--muted);
-    font-weight:500;
 
 }
 
@@ -162,7 +154,6 @@ header{
 }
 
 
-
 .intro{
 
     max-width:550px;
@@ -171,7 +162,6 @@ header{
     color:var(--muted);
 
 }
-
 
 
 .hero-buttons{
@@ -185,7 +175,6 @@ header{
 }
 
 
-
 .btn,
 .btn-outline{
 
@@ -193,7 +182,6 @@ header{
     border-radius:12px;
 
 }
-
 
 
 .btn{
@@ -204,14 +192,12 @@ header{
 }
 
 
-
 .btn-outline{
 
     border:2px solid var(--accent);
     color:var(--accent);
 
 }
-
 
 
 /* CARDS */
@@ -224,9 +210,25 @@ header{
 
     border-radius:20px;
 
-    padding:25px;
+    padding:22px;
 
-    margin:20px 0;
+    margin:16px 0;
+
+    transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--accent);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
 
 }
 
@@ -236,7 +238,6 @@ header{
 
     display:flex;
     gap:12px;
-
     align-items:center;
 
     margin-bottom:20px;
@@ -259,7 +260,6 @@ header{
 }
 
 
-
 .card p{
 
     color:var(--muted);
@@ -267,9 +267,7 @@ header{
 }
 
 
-
 /* ABOUT */
-
 
 .about-grid{
 
@@ -294,7 +292,18 @@ header{
 
     border:1px solid var(--border);
 
-    transition:.3s;
+    transition:.3s ease;
+
+}
+
+
+.info-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--accent);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.10);
 
 }
 
@@ -308,49 +317,15 @@ header{
 }
 
 
-.info-card p{
-
-    color:var(--muted);
-
-}
-
 /* EXPERIENCE */
 
 
 .timeline{
 
     display:flex;
+
     flex-direction:column;
-    gap:25px;
 
-}
-
-
-.timeline-item{
-
-    display:flex;
-    gap:20px;
-
-}
-
-
-.year{
-
-    color:var(--accent);
-
-    font-weight:bold;
-
-}
-
-/* =========================
-   EXPERIENCE COMPACT DESIGN
-========================= */
-
-
-.timeline{
-
-    display:flex;
-    flex-direction:column;
     gap:18px;
 
 }
@@ -359,7 +334,9 @@ header{
 .timeline-item{
 
     display:grid;
+
     grid-template-columns:80px 1fr;
+
     gap:20px;
 
     padding:18px 15px;
@@ -368,12 +345,8 @@ header{
 
     transition:.3s ease;
 
-    cursor:default;
-
 }
 
-
-/* Hover Effect */
 
 .timeline-item:hover{
 
@@ -384,8 +357,6 @@ header{
 }
 
 
-/* Year */
-
 .year{
 
     color:var(--accent);
@@ -394,34 +365,14 @@ header{
 
     font-weight:700;
 
-    padding-top:3px;
-
 }
-
-
-
-/* Content */
-
-.timeline-content{
-
-    padding:0;
-
-    border:none;
-
-}
-
 
 
 .timeline-content h3{
 
-    font-size:1.2rem;
-
     margin-bottom:6px;
 
-    color:var(--text);
-
 }
-
 
 
 .timeline-content p{
@@ -432,19 +383,8 @@ header{
 
     font-size:.95rem;
 
-    max-width:850px;
-
 }
 
-
-
-/* Dark mode hover */
-
-body.dark .timeline-item:hover{
-
-    background:#172033;
-
-}
 
 /* SKILLS */
 
@@ -458,7 +398,6 @@ body.dark .timeline-item:hover{
     gap:25px;
 
 }
-
 
 
 .skill-list{
@@ -487,8 +426,7 @@ body.dark .timeline-item:hover{
 }
 
 
-
-/* PROJECT */
+/* PROJECTS */
 
 
 .projects{
@@ -502,16 +440,30 @@ body.dark .timeline-item:hover{
 }
 
 
-
 .project-card{
 
     background:var(--card);
+
     border:1px solid var(--border);
+
     border-radius:18px;
+
     overflow:hidden;
+
+    transition:.35s ease;
 
 }
 
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--accent);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
 
 
 .project-card img{
@@ -519,6 +471,15 @@ body.dark .timeline-item:hover{
     height:160px;
 
     object-fit:cover;
+
+    transition:.4s;
+
+}
+
+
+.project-card:hover img{
+
+    transform:scale(1.05);
 
 }
 
@@ -546,10 +507,12 @@ body.dark .timeline-item:hover{
 .project-tech span{
 
     background:var(--tag);
+
     color:var(--accent);
+
     padding:6px 12px;
+
     border-radius:20px;
-    font-size:.8rem;
 
 }
 
@@ -567,7 +530,6 @@ body.dark .timeline-item:hover{
     border-radius:10px;
 
 }
-
 
 
 /* SOCIAL */
@@ -594,8 +556,18 @@ body.dark .timeline-item:hover{
 
     border:1px solid var(--border);
 
+    transition:.3s ease;
+
 }
 
+
+.social-links a:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--accent);
+
+}
 
 
 /* FOOTER */
@@ -608,6 +580,54 @@ footer{
     padding:30px;
 
     color:var(--muted);
+
+}
+
+
+
+/* DARK MODE */
+
+
+body.dark .card,
+body.dark .project-card,
+body.dark .info-card{
+
+    background:#1e293b;
+
+    border-color:#334155;
+
+}
+
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4{
+
+    color:#f8fafc;
+
+}
+
+
+body.dark p{
+
+    color:#cbd5e1;
+
+}
+
+
+body.dark .timeline-item:hover{
+
+    background:#172033;
+
+}
+
+
+body.dark .theme-btn{
+
+    background:#1e293b;
+
+    color:#facc15;
 
 }
 
@@ -626,13 +646,11 @@ footer{
 
     }
 
-
     .hero h1{
 
         font-size:2.2rem;
 
     }
-
 
 }
 
@@ -641,7 +659,7 @@ footer{
 
     .timeline-item{
 
-        flex-direction:column;
+        grid-template-columns:1fr;
 
     }
 
@@ -651,90 +669,5 @@ footer{
         flex-direction:column;
 
     }
-
-
-}
-
-/* =========================
-   DARK MODE FIX
-========================= */
-
-
-body.dark .card,
-body.dark .project-card,
-body.dark .info-card{
-
-    background:#1e293b;
-    border-color:#334155;
-
-}
-
-
-body.dark .card p,
-body.dark .project-info p,
-body.dark .info-card p,
-body.dark .timeline-content p{
-
-    color:#cbd5e1;
-
-}
-
-
-body.dark h1,
-body.dark h2,
-body.dark h3,
-body.dark h4{
-
-    color:#f8fafc;
-
-}
-
-
-/* project button */
-
-body.dark .project-links a{
-
-    color:white;
-
-}
-
-
-/* tags */
-
-body.dark .skill-list span,
-body.dark .project-tech span{
-
-    background:#312e81;
-    color:#ddd6fe;
-
-}
-
-
-/* social buttons */
-
-body.dark .social-links a{
-
-    background:#1e293b;
-    border-color:#334155;
-    color:#f8fafc;
-
-}
-
-
-/* profile border */
-
-body.dark .profile{
-
-    border-color:#1e293b;
-
-}
-
-
-/* theme button */
-
-body.dark .theme-btn{
-
-    background:#1e293b;
-    color:#facc15;
 
 }
